@@ -3,25 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_back"
-    android:layout_width="248dp"
-    android:layout_height="240dp"
-    android:layout_margin="8dp"
-    android:background="@drawable/bg_main_article"
-    android:backgroundTint="@color/main_orange_light"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/main_orange_light"
     android:elevation="4dp"
     android:translationZ="4dp">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/img_photo"
         android:layout_width="0dp"
-        android:layout_height="120dp"
+        android:layout_height="180dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.31"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/cornerStyle"
         tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
 
     <ImageView

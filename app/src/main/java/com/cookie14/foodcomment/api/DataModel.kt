@@ -1,8 +1,7 @@
-package com.cookie14.foodcommnet.api
+package com.cookie14.foodcomment.api
 
-import com.cookie14.foodcommnet.ArticleModel
+import com.cookie14.foodcomment.api.DataClass.ArticleModel
 import io.reactivex.Single
-import java.util.*
 
 class DataModel {
     private val apiService: APIService = RetrofitManager().getAPI()
@@ -21,5 +20,10 @@ class DataModel {
     //取得文章列表
     fun getArticleListDataModel(): Single<Resource<List<ArticleModel>>> {
         return apiService.getArticleList()
+    }
+
+    //取得文章列表
+    fun setArticleListDataModel(doAction: String, title: String, img_res: String, location: String, price: Int): Single<Resource<List<ArticleModel>>> {
+        return apiService.setArticleList(doAction, title, img_res, location, price)
     }
 }

@@ -1,16 +1,13 @@
-package com.cookie14.foodcommnet
+package com.cookie14.foodcomment
 
-import com.cookie14.foodcommnet.api.DataModel
-import com.cookie14.foodcommnet.api.Resource
-import com.cookie14.foodcommnet.api.TestList
-import io.reactivex.Observable
-import io.reactivex.Observer
+import com.cookie14.foodcomment.api.DataClass.ArticleModel
+import com.cookie14.foodcomment.api.DataModel
+import com.cookie14.foodcomment.api.Resource
+import com.cookie14.foodcomment.api.TestList
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.observers.DisposableSingleObserver
-import io.reactivex.rxkotlin.addTo
-import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 
 class MainPresenter(val view: MainView){

@@ -1,4 +1,4 @@
-package com.cookie14.foodcommnet.api
+package com.cookie14.foodcomment.api
 
 import com.google.gson.GsonBuilder
 import com.google.gson.annotations.SerializedName

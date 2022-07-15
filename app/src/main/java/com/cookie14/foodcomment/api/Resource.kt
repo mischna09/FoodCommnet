@@ -1,4 +1,4 @@
-package com.cookie14.foodcommnet.api
+package com.cookie14.foodcomment.api
 
 class Resource<T> {
     var code: String? = null
@@ -7,7 +7,7 @@ class Resource<T> {
     var data: T? = null
         private set
 
-    fun setData(data: T) {
+    /*fun setData(data: MutableList<T>) {
         this.data = data
-    }
+    }*/
 }

@@ -1,4 +1,4 @@
-package com.cookie14.foodcommnet
+package com.cookie14.foodcomment
 
 import org.junit.Test
 

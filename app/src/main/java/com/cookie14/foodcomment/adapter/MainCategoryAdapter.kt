@@ -1,9 +1,8 @@
-package com.cookie14.foodcommnet
+package com.cookie14.foodcomment.adapter
 
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -13,7 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.cookie14.foodcommnet.databinding.ItemMainCategoryBinding
+import com.cookie14.foodcomment.databinding.ItemMainCategoryBinding
 
 class MainCategoryAdapter() :
     ListAdapter<FoodCategoryModel, MainCategoryAdapter.ViewHolder>(DiffCallback()) {
@@ -73,6 +72,6 @@ class DiffCallback : DiffUtil.ItemCallback<FoodCategoryModel>() {
     override fun areItemsTheSame(oldItem: FoodCategoryModel, newItem: FoodCategoryModel) =
         oldItem.title === newItem.title
 
-    override fun areContentsTheSame(oldItem: FoodCategoryModel,newItem: FoodCategoryModel) =
+    override fun areContentsTheSame(oldItem: FoodCategoryModel, newItem: FoodCategoryModel) =
         oldItem.title == newItem.title
 }
