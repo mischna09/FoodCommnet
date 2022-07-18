@@ -2,6 +2,7 @@ package com.cookie14.foodcomment.api
 
 import com.cookie14.foodcomment.api.DataClass.ArticleModel
 import io.reactivex.Single
+import kotlinx.coroutines.Deferred
 
 class DataModel {
     private val apiService: APIService = RetrofitManager().getAPI()
@@ -23,7 +24,14 @@ class DataModel {
     }
 
     //取得文章列表
+    fun getArticleList2DataModel(): Deferred<Resource<List<ArticleModel>>> {
+        return apiService.getArticleList2()
+    }
+
+    //取得文章列表
     fun setArticleListDataModel(doAction: String, title: String, img_res: String, location: String, price: Int): Single<Resource<List<ArticleModel>>> {
         return apiService.setArticleList(doAction, title, img_res, location, price)
     }
+
+
 }

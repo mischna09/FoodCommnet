@@ -2,6 +2,7 @@ package com.cookie14.foodcomment.api
 
 import com.cookie14.foodcomment.api.DataClass.ArticleModel
 import io.reactivex.Single
+import kotlinx.coroutines.Deferred
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -17,6 +18,9 @@ interface APIService {
 
     @GET("/foodcomment/getArticleList.php")
     fun getArticleList(): Single<Resource<List<ArticleModel>>>
+
+    @GET("/foodcomment/getArticleList.php")
+    fun getArticleList2(): Deferred<Resource<List<ArticleModel>>>
 
     @POST("/foodcomment/setArticleList.php")
     @FormUrlEncoded

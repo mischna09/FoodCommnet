@@ -5,7 +5,7 @@ class Resource<T> {
     //var status: String? = null
     //var message: String? = null
     var data: T? = null
-        private set
+        set
 
     /*fun setData(data: MutableList<T>) {
         this.data = data
